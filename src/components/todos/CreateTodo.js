@@ -17,7 +17,7 @@ class CreateTodo extends Component {
     event.preventDefault();
     this.props.dispatch({ type: 'ADD_TODO', payload: this.state });
   }
-  
+
   render() {
     return(
       <div>
@@ -34,4 +34,4 @@ class CreateTodo extends Component {
   }
 }
 
-export default connect()(CreateTodo); 
+export default connect()(CreateTodo);
